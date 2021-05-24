@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.scss';
+import * as React from "react"
+import "./App.scss";
+import TradesChart from "./components/TradesChart";
+import { BrowserRouter, Route } from  "react-router-dom";
+import Header from "./Header";
 
-function App() {
-  return (
-    <div className="App">
-       <p>APP Component</p>
-    </div>
-  );
+
+const App: React.FC = () => {
+    return (
+        <BrowserRouter>
+            <Header></Header>
+            <Route path="/" exact component={TradesChart}/>
+            <Route exact path="/trades" component={TradesChart}/>
+        </BrowserRouter>
+    )
 }
-
 export default App;

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-
+import trades from './tradesReducer';
 
 // Combines all reducers to a single reducer function
-// Going to add all the reducers here in rootReducer
 const rootReducer = combineReducers({
+    trades
 });
 export default rootReducer;

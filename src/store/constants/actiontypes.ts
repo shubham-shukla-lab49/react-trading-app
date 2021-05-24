@@ -1,0 +1,4 @@
+//Action Type for Fetch Trades Request
+export const FETCH_TRADES_REQUEST = 'FETCH_TRADES_REQUEST';
+export const FETCH_TRADES_SUCCESS = 'FETCH_TRADES_SUCCESS';
+export const FETCH_TRADES_ERROR = 'FETCH_TRADES_ERROR';
